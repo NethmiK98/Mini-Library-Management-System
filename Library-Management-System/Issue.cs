@@ -99,12 +99,29 @@ namespace Library_Management_System
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            Homepage newForm = new Homepage();
+            newForm.Show();
+            this.Hide();
 
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Issue newForm = new Issue();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Return newForm = new Return();
+            newForm.Show();
+            this.Hide();
         }
     }
 }

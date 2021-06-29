@@ -60,7 +60,7 @@ namespace Library_Management_System
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(380, 25);
+            this.label1.Location = new System.Drawing.Point(414, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 65);
             this.label1.TabIndex = 0;
@@ -70,7 +70,7 @@ namespace Library_Management_System
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(384, 82);
+            this.label2.Location = new System.Drawing.Point(396, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(242, 23);
             this.label2.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace Library_Management_System
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.btndelete);
             this.panel1.Controls.Add(this.btnupdate);
             this.panel1.Controls.Add(this.btnsave);
@@ -91,15 +91,15 @@ namespace Library_Management_System
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(284, 130);
+            this.panel1.Location = new System.Drawing.Point(268, 130);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(655, 408);
+            this.panel1.Size = new System.Drawing.Size(642, 387);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btndelete
             // 
-            this.btndelete.BackColor = System.Drawing.Color.SeaGreen;
+            this.btndelete.BackColor = System.Drawing.Color.DarkCyan;
             this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btndelete.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.White;
@@ -113,11 +113,11 @@ namespace Library_Management_System
             // 
             // btnupdate
             // 
-            this.btnupdate.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnupdate.BackColor = System.Drawing.Color.DarkCyan;
             this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnupdate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.ForeColor = System.Drawing.Color.White;
-            this.btnupdate.Location = new System.Drawing.Point(267, 299);
+            this.btnupdate.Location = new System.Drawing.Point(261, 299);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(142, 47);
             this.btnupdate.TabIndex = 12;
@@ -127,7 +127,7 @@ namespace Library_Management_System
             // 
             // btnsave
             // 
-            this.btnsave.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnsave.BackColor = System.Drawing.Color.DarkCyan;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsave.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsave.ForeColor = System.Drawing.Color.White;
@@ -227,11 +227,11 @@ namespace Library_Management_System
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SeaGreen;
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(35, 146);
+            this.button1.Location = new System.Drawing.Point(35, 130);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 65);
             this.button1.TabIndex = 3;
@@ -240,11 +240,11 @@ namespace Library_Management_System
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.SeaGreen;
+            this.button2.BackColor = System.Drawing.Color.DarkCyan;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(35, 252);
+            this.button2.Location = new System.Drawing.Point(35, 237);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 65);
             this.button2.TabIndex = 4;
@@ -253,35 +253,37 @@ namespace Library_Management_System
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.SeaGreen;
+            this.button3.BackColor = System.Drawing.Color.DarkCyan;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(35, 363);
+            this.button3.Location = new System.Drawing.Point(35, 345);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(175, 65);
             this.button3.TabIndex = 5;
             this.button3.Text = "Issue Book";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.SeaGreen;
+            this.button4.BackColor = System.Drawing.Color.DarkCyan;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(35, 473);
+            this.button4.Location = new System.Drawing.Point(35, 452);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(175, 65);
             this.button4.TabIndex = 6;
             this.button4.Text = "Return Book";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(101, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(90, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(77, 77);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -315,6 +317,7 @@ namespace Library_Management_System
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Issue";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Issue_Load);
             this.panel1.ResumeLayout(false);
