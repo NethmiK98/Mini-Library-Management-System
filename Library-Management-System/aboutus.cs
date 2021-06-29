@@ -36,5 +36,12 @@ namespace Library_Management_System
             this.Hide();
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Homepage newForm = new Homepage();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }
