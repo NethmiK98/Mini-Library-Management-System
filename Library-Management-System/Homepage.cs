@@ -44,7 +44,9 @@ namespace Library_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Issue obj = new Issue();
+            obj.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,6 +64,13 @@ namespace Library_Management_System
         private void button5_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Return obj = new Return();
+            obj.Show();
+            this.Hide();
         }
     }
 }
