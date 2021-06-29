@@ -52,6 +52,12 @@
     <Compile Include="aboutus.designer.cs">
       <DependentUpon>aboutus.cs</DependentUpon>
     </Compile>
+    <Compile Include="bookdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookdetails.Designer.cs">
+      <DependentUpon>bookdetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,8 +84,17 @@
     <Compile Include="Return.Designer.cs">
       <DependentUpon>Return.cs</DependentUpon>
     </Compile>
+    <Compile Include="studentdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentdetails.Designer.cs">
+      <DependentUpon>studentdetails.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aboutus.resx">
       <DependentUpon>aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookdetails.resx">
+      <DependentUpon>bookdetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -101,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Return.resx">
       <DependentUpon>Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentdetails.resx">
+      <DependentUpon>studentdetails.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
