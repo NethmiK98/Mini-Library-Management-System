@@ -36,5 +36,19 @@ namespace Library_Management_System
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Homepage newForm = new Homepage();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SingUp newForm = new SingUp();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

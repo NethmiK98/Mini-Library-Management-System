@@ -84,8 +84,14 @@ namespace Library_Management_System
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             bookdetails newForm = new bookdetails();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Login newForm = new Login();
             newForm.Show();
             this.Hide();
         }

@@ -237,6 +237,7 @@ namespace Library_Management_System
             this.button1.TabIndex = 3;
             this.button1.Text = "Student Details";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -250,6 +251,7 @@ namespace Library_Management_System
             this.button2.TabIndex = 4;
             this.button2.Text = "Book Details";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -294,7 +296,7 @@ namespace Library_Management_System
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(840, 25);
+            this.pictureBox2.Location = new System.Drawing.Point(855, 25);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(70, 59);
             this.pictureBox2.TabIndex = 10;

@@ -98,5 +98,19 @@ namespace Library_Management_System
             newForm.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            studentdetails newForm = new studentdetails();
+            newForm.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bookdetails newForm = new bookdetails();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }
