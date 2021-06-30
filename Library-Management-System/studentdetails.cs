@@ -46,16 +46,16 @@ namespace Library_Management_System
 
         private void button5_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void nametxt_TextChanged(object sender, EventArgs e)
-        {
             SqlCommand cw = new SqlCommand("insert into studentTB values('" + txtname.Text + "','" + txtemail.Text + "'," + txtid.Text + "," + txtcontact.Text + ",'" + txtbatch.Text + "')", scq);
             scq.Open();
             cw.ExecuteNonQuery();
             scq.Close();
             MessageBox.Show("Data saved successfully");
+        }
+
+        private void nametxt_TextChanged(object sender, EventArgs e)
+        {
+           
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -112,6 +112,11 @@ namespace Library_Management_System
             Return newForm = new Return();
             newForm.Show();
             this.Hide();
+        }
+
+        private void txtcontact_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
