@@ -232,6 +232,7 @@ namespace Library_Management_System
             this.button1.TabIndex = 4;
             this.button1.Text = "Student Details";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -245,6 +246,7 @@ namespace Library_Management_System
             this.button2.TabIndex = 5;
             this.button2.Text = "Book Details";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
