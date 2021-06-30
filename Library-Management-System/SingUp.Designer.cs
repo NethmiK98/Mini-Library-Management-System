@@ -51,7 +51,7 @@ namespace Library_Management_System
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.Location = new System.Drawing.Point(602, 292);
-            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Size = new System.Drawing.Size(257, 22);
             this.txtConfirmPassword.TabIndex = 5;
@@ -141,7 +141,7 @@ namespace Library_Management_System
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(602, 198);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(257, 22);
             this.txtPassword.TabIndex = 13;
@@ -149,7 +149,7 @@ namespace Library_Management_System
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(104, 382);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(253, 22);
             this.txtEmail.TabIndex = 14;
@@ -157,7 +157,7 @@ namespace Library_Management_System
             // txtLast
             // 
             this.txtLast.Location = new System.Drawing.Point(104, 291);
-            this.txtLast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLast.Margin = new System.Windows.Forms.Padding(4);
             this.txtLast.Name = "txtLast";
             this.txtLast.Size = new System.Drawing.Size(253, 22);
             this.txtLast.TabIndex = 15;
@@ -165,7 +165,7 @@ namespace Library_Management_System
             // txtfirst
             // 
             this.txtfirst.Location = new System.Drawing.Point(100, 196);
-            this.txtfirst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfirst.Margin = new System.Windows.Forms.Padding(4);
             this.txtfirst.Name = "txtfirst";
             this.txtfirst.Size = new System.Drawing.Size(257, 22);
             this.txtfirst.TabIndex = 16;
@@ -177,7 +177,7 @@ namespace Library_Management_System
             this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(367, 455);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(205, 53);
             this.button1.TabIndex = 17;
@@ -192,12 +192,13 @@ namespace Library_Management_System
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(724, 368);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 43);
             this.button2.TabIndex = 18;
             this.button2.Text = "Browse";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -231,7 +232,7 @@ namespace Library_Management_System
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtConfirmPassword);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SingUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

@@ -69,6 +69,21 @@ namespace Library_Management_System
             newForm.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+               
+            OpenFileDialog open = new OpenFileDialog();
+              
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *png;";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                
+                pictureBox1.Image = Image.FromFile(open.FileName);
+                
+            }
+        }
     }
     
 }

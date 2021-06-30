@@ -290,6 +290,7 @@ namespace Library_Management_System
             this.txtcontact.Name = "txtcontact";
             this.txtcontact.Size = new System.Drawing.Size(232, 22);
             this.txtcontact.TabIndex = 52;
+            this.txtcontact.TextChanged += new System.EventHandler(this.txtcontact_TextChanged);
             // 
             // txtname
             // 

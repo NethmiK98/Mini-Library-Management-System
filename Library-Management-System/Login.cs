@@ -39,7 +39,7 @@ namespace Library_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+           
 
             SqlCommand sq = new SqlCommand("insert into SignUpTB values('" + txtusername.Text + "','" + txtpassword.Text + "')", wq);
             wq.Open();
