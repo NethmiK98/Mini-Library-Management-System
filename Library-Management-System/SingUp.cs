@@ -64,6 +64,10 @@ namespace Library_Management_System
             sc.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Data saved successfully");
+
+            Login newForm = new Login();
+            newForm.Show();
+            this.Hide();
         }
     }
     

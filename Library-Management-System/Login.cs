@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace Library_Management_System
 {
     public partial class Login : Form
@@ -16,7 +16,7 @@ namespace Library_Management_System
         {
             InitializeComponent();
         }
-
+        SqlConnection wq = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\123\Documents\Csharp.mdf;Integrated Security=True;Connect Timeout=30");
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -39,6 +39,14 @@ namespace Library_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
+            SqlCommand sq = new SqlCommand("insert into SignUpTB values('" + txtusername.Text + "','" + txtpassword.Text + "')", wq);
+            wq.Open();
+            sq.ExecuteNonQuery();
+            wq.Close();
+            MessageBox.Show("Data saved successfully");
+
             Homepage newForm = new Homepage();
             newForm.Show();
             this.Hide();
