@@ -50,10 +50,9 @@ namespace Library_Management_System
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(392, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(294, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 65);
+            this.label1.Size = new System.Drawing.Size(168, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "ReadMe";
             // 
@@ -61,10 +60,9 @@ namespace Library_Management_System
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(386, 72);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(290, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 23);
+            this.label2.Size = new System.Drawing.Size(188, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Library Management System";
             // 
@@ -74,10 +72,9 @@ namespace Library_Management_System
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(41, 137);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(31, 111);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 65);
+            this.button1.Size = new System.Drawing.Size(131, 53);
             this.button1.TabIndex = 12;
             this.button1.Text = "Student Details";
             this.button1.UseVisualStyleBackColor = false;
@@ -89,13 +86,13 @@ namespace Library_Management_System
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(41, 248);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(31, 202);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 62);
+            this.button2.Size = new System.Drawing.Size(131, 50);
             this.button2.TabIndex = 13;
             this.button2.Text = "Book Details";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -103,10 +100,9 @@ namespace Library_Management_System
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(41, 360);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(31, 292);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 61);
+            this.button3.Size = new System.Drawing.Size(131, 50);
             this.button3.TabIndex = 14;
             this.button3.Text = "Issue Books";
             this.button3.UseVisualStyleBackColor = false;
@@ -118,10 +114,9 @@ namespace Library_Management_System
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(41, 469);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(31, 381);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 59);
+            this.button4.Size = new System.Drawing.Size(131, 48);
             this.button4.TabIndex = 15;
             this.button4.Text = "Return Books";
             this.button4.UseVisualStyleBackColor = false;
@@ -130,10 +125,9 @@ namespace Library_Management_System
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(88, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(66, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(58, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
@@ -142,9 +136,10 @@ namespace Library_Management_System
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(267, 137);
+            this.pictureBox2.Location = new System.Drawing.Point(200, 111);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(621, 391);
+            this.pictureBox2.Size = new System.Drawing.Size(466, 318);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
@@ -152,9 +147,10 @@ namespace Library_Management_System
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(751, 27);
+            this.pictureBox3.Location = new System.Drawing.Point(563, 22);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 59);
+            this.pictureBox3.Size = new System.Drawing.Size(49, 48);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
@@ -163,20 +159,21 @@ namespace Library_Management_System
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(823, 27);
+            this.pictureBox4.Location = new System.Drawing.Point(617, 22);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(65, 59);
+            this.pictureBox4.Size = new System.Drawing.Size(49, 48);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
             // 
             // Homepage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(961, 566);
+            this.ClientSize = new System.Drawing.Size(721, 460);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -187,7 +184,6 @@ namespace Library_Management_System
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Homepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Library Managment System";

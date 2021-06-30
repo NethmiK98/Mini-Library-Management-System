@@ -47,11 +47,11 @@ namespace Library_Management_System
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.txtbatch = new System.Windows.Forms.TextBox();
+            this.txtcontact = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -180,6 +180,7 @@ namespace Library_Management_System
             this.button7.TabIndex = 44;
             this.button7.Text = "Delete";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -192,6 +193,7 @@ namespace Library_Management_System
             this.button6.TabIndex = 43;
             this.button6.Text = "Update";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -204,6 +206,7 @@ namespace Library_Management_System
             this.button5.TabIndex = 42;
             this.button5.Text = "Save";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button8
             // 
@@ -244,49 +247,50 @@ namespace Library_Management_System
             this.label3.TabIndex = 48;
             this.label3.Text = "Student Details";
             // 
-            // textBox1
+            // txtemail
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 176);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 20);
-            this.textBox1.TabIndex = 49;
+            this.txtemail.Location = new System.Drawing.Point(70, 176);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(175, 20);
+            this.txtemail.TabIndex = 49;
             // 
-            // textBox2
+            // txtid
             // 
-            this.textBox2.Location = new System.Drawing.Point(70, 238);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
-            this.textBox2.TabIndex = 50;
+            this.txtid.Location = new System.Drawing.Point(70, 238);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(175, 20);
+            this.txtid.TabIndex = 50;
             // 
-            // textBox3
+            // txtbatch
             // 
-            this.textBox3.Location = new System.Drawing.Point(395, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 20);
-            this.textBox3.TabIndex = 51;
+            this.txtbatch.Location = new System.Drawing.Point(395, 176);
+            this.txtbatch.Name = "txtbatch";
+            this.txtbatch.Size = new System.Drawing.Size(175, 20);
+            this.txtbatch.TabIndex = 51;
             // 
-            // textBox4
+            // txtcontact
             // 
-            this.textBox4.Location = new System.Drawing.Point(395, 101);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 20);
-            this.textBox4.TabIndex = 52;
+            this.txtcontact.Location = new System.Drawing.Point(395, 101);
+            this.txtcontact.Name = "txtcontact";
+            this.txtcontact.Size = new System.Drawing.Size(175, 20);
+            this.txtcontact.TabIndex = 52;
             // 
-            // textBox5
+            // txtname
             // 
-            this.textBox5.Location = new System.Drawing.Point(70, 101);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(175, 20);
-            this.textBox5.TabIndex = 53;
+            this.txtname.Location = new System.Drawing.Point(70, 101);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(175, 20);
+            this.txtname.TabIndex = 53;
+            this.txtname.TextChanged += new System.EventHandler(this.nametxt_TextChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtname);
+            this.panel1.Controls.Add(this.txtcontact);
+            this.panel1.Controls.Add(this.txtbatch);
+            this.panel1.Controls.Add(this.txtid);
+            this.panel1.Controls.Add(this.txtemail);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
@@ -346,11 +350,11 @@ namespace Library_Management_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtbatch;
+        private System.Windows.Forms.TextBox txtcontact;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Panel panel1;
     }
 }

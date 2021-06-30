@@ -38,10 +38,10 @@ namespace Library_Management_System
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtbook = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtprice = new System.Windows.Forms.TextBox();
+            this.txtquan = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -91,9 +91,9 @@ namespace Library_Management_System
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(202, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 20);
+            this.label3.Size = new System.Drawing.Size(111, 20);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Student Details";
+            this.label3.Text = "Book Details";
             // 
             // label4
             // 
@@ -111,9 +111,9 @@ namespace Library_Management_System
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(66, 226);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 20);
+            this.label5.Size = new System.Drawing.Size(92, 20);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Book Nme";
+            this.label5.Text = "Book Name";
             // 
             // label6
             // 
@@ -136,45 +136,47 @@ namespace Library_Management_System
             this.label7.TabIndex = 30;
             this.label7.Text = "Quantity";
             // 
-            // textBox1
+            // txtbook
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 156);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 20);
-            this.textBox1.TabIndex = 31;
+            this.txtbook.Location = new System.Drawing.Point(70, 156);
+            this.txtbook.Name = "txtbook";
+            this.txtbook.Size = new System.Drawing.Size(175, 20);
+            this.txtbook.TabIndex = 31;
+            this.txtbook.TextChanged += new System.EventHandler(this.txtbook_TextChanged);
             // 
-            // textBox2
+            // txtname
             // 
-            this.textBox2.Location = new System.Drawing.Point(70, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
-            this.textBox2.TabIndex = 32;
+            this.txtname.Location = new System.Drawing.Point(70, 252);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(175, 20);
+            this.txtname.TabIndex = 32;
             // 
-            // textBox3
+            // txtprice
             // 
-            this.textBox3.Location = new System.Drawing.Point(356, 173);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 20);
-            this.textBox3.TabIndex = 33;
+            this.txtprice.Location = new System.Drawing.Point(356, 173);
+            this.txtprice.Name = "txtprice";
+            this.txtprice.Size = new System.Drawing.Size(175, 20);
+            this.txtprice.TabIndex = 33;
             // 
-            // textBox4
+            // txtquan
             // 
-            this.textBox4.Location = new System.Drawing.Point(356, 252);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 20);
-            this.textBox4.TabIndex = 34;
+            this.txtquan.Location = new System.Drawing.Point(356, 252);
+            this.txtquan.Name = "txtquan";
+            this.txtquan.Size = new System.Drawing.Size(175, 20);
+            this.txtquan.TabIndex = 34;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.SeaGreen;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(28, 350);
+            this.button5.Location = new System.Drawing.Point(34, 350);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(142, 47);
             this.button5.TabIndex = 35;
             this.button5.Text = "Save";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -187,6 +189,7 @@ namespace Library_Management_System
             this.button6.TabIndex = 36;
             this.button6.Text = "Update";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -199,6 +202,7 @@ namespace Library_Management_System
             this.button7.TabIndex = 37;
             this.button7.Text = "Delete";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel1
             // 
@@ -206,10 +210,10 @@ namespace Library_Management_System
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtquan);
+            this.panel1.Controls.Add(this.txtprice);
+            this.panel1.Controls.Add(this.txtname);
+            this.panel1.Controls.Add(this.txtbook);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -318,10 +322,10 @@ namespace Library_Management_System
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtbook;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtprice;
+        private System.Windows.Forms.TextBox txtquan;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
