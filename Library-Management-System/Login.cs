@@ -41,12 +41,7 @@ namespace Library_Management_System
         {
            
 
-            SqlCommand sq = new SqlCommand("insert into SignUpTB values('" + txtusername.Text + "','" + txtpassword.Text + "')", wq);
-            wq.Open();
-            sq.ExecuteNonQuery();
-            wq.Close();
-            MessageBox.Show("Data saved successfully");
-
+          
             Homepage newForm = new Homepage();
             newForm.Show();
             this.Hide();
